@@ -50,7 +50,8 @@ After cloning repository
 Install the dependencies
 1. cd frontend - yarn install (why not npm install ? simply because this project is using yarn lock)
 2. cd backend - npm i 
-3. create .env file in backend at root level (copy from .env.example file provided in the project)
+3.1 create .env file in frontend at root level (copy from .env.example file provided in the project)
+3.2 create .env file in backend at root level (copy from .env.example file provided in the project)
    change the values of respected fields with your credentials
    accesskey and the secret access keys are referring to aws (check this guide on how to get those https://www.youtube.com/watch?v=5oBHvl1hurE)
 4. now run both frontend and backend by cd into those and npm start command
