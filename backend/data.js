@@ -1,0 +1,111 @@
+import bcrypt from 'bcryptjs';
+
+const data = {
+  users: [
+    {
+      name: 'Abhishek',
+      email: 'admin@gmail.com',
+      password: bcrypt.hashSync('123', 8),
+      isAdmin: true,
+      isSeller : true,
+      seller : {
+          numReviews : 0,
+          rating : 0,
+          name: "Abh1",
+          logo : "/images/rick.jpg",
+          description : "best seller",
+          rating : 4.5
+      }
+    },
+    {
+      name: 'Abhi',
+      email: 'abhi@gmail.com',
+      password: bcrypt.hashSync('123', 8),
+      isAdmin: false,
+    },
+    {
+      name: 'Abhi1',
+      email: 'abhi1@gmail.com',
+      password: bcrypt.hashSync('123', 8),
+      isAdmin: true,
+      isSeller : true,
+      seller: {
+        rating : 0,
+        numReviews : 0,
+        description : "Super Seller",
+        name : "Abhi1",
+        logo : "/images/kendall.jpg",
+        rating : 4.5
+    },
+    },
+  ],
+    products: [
+      {
+        name: 'Adidas Shirt',
+        category: 'Shirts',
+        image: '/images/p1.jpg',
+        price: 120,
+        countInStock: 10,
+        brand: 'Adidas',
+        rating: 4.5,
+        numReviews: 10,
+        description: 'high quality product',
+      },
+      {
+        name: 'Vintage Shirt',
+        category: 'Shirts',
+        image: '/images/p2.jpg',
+        price: 100,
+        countInStock: 20,
+        brand: 'Vintage',
+        rating: 4.0,
+        numReviews: 10,
+        description: 'high quality product',
+      },
+      {
+        name: 'Lacoste Shirt',
+        category: 'Shirts',
+        image: '/images/p3.jpg',
+        price: 220,
+        countInStock: 0,
+        brand: 'Lacoste',
+        rating: 4.8,
+        numReviews: 17,
+        description: 'high quality product',
+      },
+      {
+        name: 'Nike Slim Pant',
+        category: 'Pants',
+        image: '/images/p4.jpg',
+        price: 78,
+        countInStock: 15,
+        brand: 'Nike',
+        rating: 4.5,
+        numReviews: 14,
+        description: 'high quality product',
+      },
+      {
+        name: 'Puma Pant',
+        category: 'Pants',
+        image: '/images/p5.jpg',
+        price: 65,
+        countInStock: 5,
+        brand: 'Puma',
+        rating: 4.5,
+        numReviews: 10,
+        description: 'high quality product',
+      },
+      {
+        name: 'Adidas Pant',
+        category: 'Pants',
+        image: '/images/p6.jpg',
+        price: 139,
+        countInStock: 12,
+        brand: 'Adidas',
+        rating: 4.5,
+        numReviews: 15,
+        description: 'high quality product',
+      },
+    ],
+  };
+  export default data;
