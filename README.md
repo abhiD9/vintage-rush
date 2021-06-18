@@ -1,5 +1,7 @@
 ## Hi there, Welcome to the Vintage-rush app [Live-Demo].⚡
 
+![alt text](https://mongo-mern.s3.ap-south-1.amazonaws.com/1.jpg)
+
 ### Stack used: MongoDb, ExpressJs, NodeJs, ReactJs
 
 ### Services: Google-Maps, Google-login, Mailgun, Paypal, SocketIo, JWT
